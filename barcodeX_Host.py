@@ -48,8 +48,7 @@ def sql_str(str):
         for field in row:
             #print (field,end=' ')  #this not run in python2.7
             print (field)
-            if field.isalstr()  :field=str(field)
-            s=s+field+'|'
+            s=s[0]+'|'+s[1] +'|'+s[2]
             print()
     print(s)
     
